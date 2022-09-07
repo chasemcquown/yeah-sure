@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*this allows you to define a custom color once and then use it easily through an entire project*/
+  :root {
+    --primary-color: white;
+    --secondary-color: #2477BF;
+    --tertiary-color: black;
+    --foam: #91C4D9;
+  }
+  
+  body {
+    background-color: var(--tertiary-color);
+    color: white;
+    font-family: 'Prompt', sans-serif;
+  }
+  
+  /* .homepage-content {
+    padding-left: 100px;
+  } */
+
+
+  /* HEADER / NAV BAR STYLES START */
+  
+  header {
+    padding: 20px 35px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  header h1 {
+    font-weight: lighter;
+    margin: 0;
+    font-size: 36px;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  header a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  header nav ul li a:hover {
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 5px;
+    border-left: 0px;
+    border-color: var(--secondary-color);
+    border-style: solid;
+    text-shadow: none;
+  }
+
+
+  /* HERO STYLES */
+  .homepage-content {
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .hero-section {
+    justify-content: center;
+    font-size: xx-large;
+  }
+
+  .hero-content {
+    height: 400px;
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .hero-btn {
+    width: 100%;
+    color: var(--secondary-color);
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 20px;
+    padding: 10px;
+    border: 5px;
+    border-style: solid;
+    background-color: transparent;
+    border-color: var(--secondary-color);
+  }
+
+  .hero-btn:hover {
+    color: var(--foam);
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border: 5px;
+    border-style: solid;
+    background-color: transparent;
+    border-color: var(--foam);
+  }
+
+
+  /* PROJECT STYLES */
+  .project-section {
+    margin-bottom: 100px;
+  }
+
+  /* FOOTER STYLES START */
+footer {
+    background: var(--primary-color);
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  footer h2 {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin: 0;
+  }
+  
+  footer div {
+    line-height: 1.5;
+    text-align: right;
+  }
+  
+  footer a {
+    color: var(--secondary-color);
+  }
+  /* END FOOTER STYLES */

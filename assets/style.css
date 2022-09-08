@@ -11,6 +11,10 @@
     --tertiary-color: black;
     --foam: #91C4D9;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
   
   body {
     background-color: var(--tertiary-color);
@@ -93,8 +97,6 @@
   /* HERO STYLES */
   .homepage-content {
     margin-top: 150px;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 
   .hero-section {
@@ -138,10 +140,10 @@
   .projects {
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(36,119,191,1) 0%, rgba(0,0,0,1) 35%);
   }
 
   .project-1, .project-2, .project-3, .project-4 {
@@ -188,6 +190,31 @@
     font-size: 17px;
   }
 
+  .projects-btn {
+    width: 100%;
+    color: var(--foam);
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 20px;
+    padding: 10px;
+    border: 5px;
+    border-style: solid;
+    background-color: transparent;
+    border-color: var(--foam);
+  }
+
+  .projects-btn:hover {
+    color: var(--secondary-color);
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border: 5px;
+    border-style: solid;
+    background-color: transparent;
+    border-color: var(--secondary-color);
+  }
+
 
 
 
@@ -230,5 +257,13 @@ footer {
   
   footer a {
     color: var(--secondary-color);
+  }
+
+  footer i {
+    color: var(--secondary-color);
+  }
+
+  footer i:hover {
+    color: var(--foam);
   }
   /* END FOOTER STYLES */
